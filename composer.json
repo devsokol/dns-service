@@ -1,0 +1,30 @@
+{
+    "name": "andriisokolovskyi/test",
+    "autoload": {
+        "psr-4": {
+            "App\\LaravelDns\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\LaravelDns\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Andrii Sokolovskyi",
+            "email": "devsokol@ukr.net"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "App\\LaravelDns\\DnsServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "laravel/laravel": "^10.2",
+        "phpunit/phpunit": "^10.2"
+    }
+}
