@@ -1,8 +1,8 @@
 <?php
 
-namespace App\LaravelDns\Tests;
+namespace Tests\Domain;
 
-use App\LaravelDns\Dns;
+use App\Domain\Dns;
 use PHPUnit\Framework\TestCase;
 
 class DnsTest extends TestCase

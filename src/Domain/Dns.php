@@ -1,8 +1,8 @@
 <?php
 
-namespace App\LaravelDns;
+namespace App\Domain;
 
-class Dns
+class Dns implements DnsInterface
 {
     public function getRecords($domain)
     {

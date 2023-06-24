@@ -1,10 +1,28 @@
-# Laravel DNS Package
+# Laravel DNS
 
-This Laravel package allows you to fetch all DNS records for a given domain name.
+This project is a Laravel package that provides a simple way to get DNS records for a domain.
 
 ## Installation
 
-You can install the package via composer:
+Clone this repository and install the dependencies:
 
 ```bash
-composer require andriisokolovskyi/laravel-dns
+git clone https://github.com/your-repo/laravel-dns.git
+cd laravel-dns
+composer install
+```
+
+### Usage
+
+```bash
+use App\Domain\Dns;
+
+$dns = new Dns();
+$records = $dns->getRecords('example.com');
+```
+
+### Running Tests
+
+```bash
+vendor/bin/phpunit tests/Domain/DnsTest.php
+```
